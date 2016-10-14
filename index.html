@@ -7,7 +7,7 @@
 
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	</head>
@@ -17,6 +17,11 @@
 <div class="jumbotron title"><h1>Crystal Collector</h1></div>
 <div class="panel-body">
 <h2>Intructions</h2><br>	
+<p>You will be given a random number at the start of the game</p><br>
+<p>There are four crystals below.  By clickiinng on a crytal you will add a specific amount of points to your total score</p><br>
+<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p><br>
+<p>The value of each crystal is hidden from you until you click on it.</p><br>
+<p>Each time the game starts, the game will change the values of each crystal</p>
 
 
 </div>
@@ -24,17 +29,17 @@
 <div class="row">
   <div class="col-md-3 scorebox"><ul>
   <li><h2>Score to Match</h2></li>
-  <li>  <h3>32</h3></li>
+  <li>  <h3 class="match">32</h3></li>
 
   </div>
   <div class="clearfix"></div>
 <br>
 <br>
 <div class="row">
-  <div class="col-md-3"><img src="images/sapphire.jpg" height="200" width="200"></div>
-  <div class="col-md-3"><img src="images/amethyst.jpg" height="200" width="200"></div>
- <div class="col-md-3"><img src="images/ruby.png" height="200" width="200"></div>
-  <div class="col-md-3"><img src="images/opal.jpg" height="200" width="200"></div>
+  <div class="col-md-3 gem gem1"><img src="images/sapphire.jpg" height="200" width="200"></div>
+  <div class="col-md-3 gem gem2"><img src="images/amethyst.jpg" height="200" width="200"></div>
+ <div class="col-md-3 gem gem3"><img src="images/ruby.png" height="200" width="200"></div>
+  <div class="col-md-3 gem gem4"><img src="images/opal.jpg" height="200" width="200"></div>
 </div>
 
 <br>
@@ -42,12 +47,12 @@
 <div class="row">
   <div class="col-md-6 pad"><ul>
   <li><h2>Score Box</h2></li>
-  <li>  <h3>32</h3></li>
+  <li>  <h3 class="score">32</h3></li>
   </div>
     <div class="col-md-6 pad"><ul>
   <li><h2>YOU WIN/LOSE</h2></li>
-  <li>  <h3>Wins = #</h3></li>
-  <li>  <h3>Loss = #</h3></li>
+  <li>  <h3 class="win">Wins = #</h3></li>
+  <li>  <h3 class="loss">Loss = #</h3></li>
   </div>
 	</div>
 
@@ -58,7 +63,9 @@
 </div>
 
 <footer class="site-footer">
- <p class="copyright"> I'm the Sticky Footer.</p>
+ <p class="copyright">Crystal Collector 2016</p><br>
+ <p class="copyright">Copyright Scott May</p><br>
+
 </footer>
 
 </div>
