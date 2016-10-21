@@ -14,7 +14,7 @@ $('.loss').html(loss)
 	function newGame() {
 
 		counter = 0;
-		$('.score').text(counter);
+		$('.score')..html(counter);
 
 		function madUpNumber(){
 		   	return Math.floor(Math.random()*(max-min+1)+min);
@@ -22,27 +22,27 @@ $('.loss').html(loss)
 
 		var numberToGuess = randomIntFromInterval(19,120);
 
-		$('.match').text(numberToGuess);
+		$('.match').html(numberToGuess);
 
 
 		$('.gem').on('click', function(){
 		    counter = counter + parseInt($(this).data('num'));
 		   
-		    $('#yourScore').text(counter);
+		    $('#yourScore')..html(counter);
 
-		    if (counter == numberToGuess){
-		      $('#status').text('You won!!!!');
+		    if (counter === numberToGuess){
+		      $('#status')..html('You won!!!!');
 		      wins ++;
-		      $('#win').text(wins);
+		      $('#win').html(wins);
 		      console.log(wins)
 		      $('.gem').empty();
 		      newCrystals();
 		      newGame();
 		        
 		    } else if ( counter > numberToGuess){
-		        $('#status').text('You lost!')
+		        $('#status').html('You lost!')
 		        losses ++;
-		        $('.loss').text(losses);
+		        $('.loss').html(losses);
 		        console.log(losses)
 		        $('.gem').empty();
 		        newCrystals();
@@ -51,6 +51,6 @@ $('.loss').html(loss)
 		});
 	}
 
-};
+
 
 
